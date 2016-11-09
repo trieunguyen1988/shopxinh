@@ -1,0 +1,66 @@
+2016-11-08 16:52:34 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: BurnEngine
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getProducts($data = array()) {
+LINE: 63
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $filter_data = array(
+LINE: 22
+CODE: foreach ($results as $result) {
+LINE: 37
+
+FILE: system/library/response.php
+CODE: if ($this->output) {
+LINE: 63
+CODE: public function redirect($url, $status = 302) {
+LINE: 15
+
+FILE: admin/view/template/common/column_left.tpl
+CODE: <?php foreach ($menus as $menu) { ?>
+LINE: 17
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if (isset($this->request->get['_route_'])) {
+LINE: 14
+CODE: return $this->load->view(
+LINE: 88
+
+FILE: system/engine/event.php
+CODE: $this->registry = $registry;
+LINE: 14
+----------------------------------------------------------------
